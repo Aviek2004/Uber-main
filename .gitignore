@@ -1,7 +1,27 @@
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+jspm_packages/
+bower_components/
+
+# Build output
+dist/
+dist-ssr/
+build/
+.next/
+out/
+.nuxt/
+.output/
+.svelte-kit/
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -9,18 +29,64 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Runtime and diagnostic files
+pids/
+*.pid
+*.seed
+*.pid.lock
+report.*.*.*.*.json
 
-# Editor directories and files
+# Cache
+.npm/
+.cache/
+.parcel-cache/
+.nyc_output/
+coverage/
+*.lcov
+.eslintcache
+.stylelintcache
+.turbo/
+.vite/
+**/.vitepress/dist/
+**/.vitepress/cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor and operating system files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Package manager files
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnpm-store/
+.yarn-integrity
+*.tgz
+
+# Other generated files
+.grunt/
+.lock-wscript
+build/Release/
+web_modules/
+.node_repl_history
+.tern-port
+.vscode-test/
+.astro/
+.docusaurus/
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
